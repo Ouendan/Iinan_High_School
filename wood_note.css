@@ -1,0 +1,185 @@
+/* リセットcss */
+body,header{
+  padding: 0;
+  margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6,a,p,ul{
+  font-weight: normal;
+  color: black;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* header css */
+header{
+  width: auto;
+  height: 150px;
+  padding: 20px 30px;
+  background-color: rgb(243, 246, 249);
+}
+
+.logo{
+  width: 130px;
+  height: 130px;
+  border-radius: 40%;
+}
+
+/* main css */
+.title h1{
+  text-align: center;
+  border-bottom: 2px solid rgb(52, 245, 42);
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+
+.back{
+  display: inline-block;
+  color: aliceblue;
+  background-color: cornflowerblue;
+  padding: 5px 10px 5px 35px;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+
+/* container css */
+.container{
+  height: 750px;
+  width: auto;
+  background-image: url(wood_kasinoki.png);
+  background-size: cover;
+  position: relative;
+}
+
+.top-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.name{
+  font-size: 70px;
+  color: aliceblue;
+  text-shadow: 3px -3px 3px black;
+}
+
+.catch-copy{
+  font-size: 40px;
+  color: antiquewhite;
+  text-shadow: 3px -3px 3px black;
+}
+
+
+/* introduction css */
+.introduction{
+  margin: 30px 60px;
+}
+
+.photos{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.photo{
+margin: 40px;
+}
+
+.buy{
+  font-size: 30px;
+  border: 3px double rgb(17, 180, 180);
+  color: lightblue;
+}
+
+.buy{
+  margin: 60px;
+}
+
+.sentence{
+  margin-top: 120px;
+  margin-right: 30px;
+}
+
+
+
+.sentence p{
+  letter-spacing: 5px;
+  font-size: 25px;
+  margin: 40px;
+}
+
+/* movies css */
+
+.movies{
+  display: flex;
+  justify-content: space-around;
+  margin: 60px 0;
+}
+
+/* footer css */
+footer{
+  width: auto;
+  height: 60px;
+  background-color: rgb(243, 246, 249);
+  padding-top: 20px;
+  text-align: center;
+}
+
+footer p{
+  letter-spacing: 1.2px;
+  padding-bottom: 10px;
+}
+
+/* メディアクリエ */
+
+@media(min-width: 800px) and (max-width: 1024px){
+  .movies{
+    flex-wrap: wrap;
+  }
+
+  .container{
+    height: 750px;
+    width: auto;
+    background-image: url(ipad_wood_kasinoki.jpeg);
+    background-size: cover;
+    position: relative;
+  }
+
+  .movie{
+    padding: 30px;
+  }
+}
+
+
+/* Responsive Web Design  iPhone */
+@media(min-width: 0px) and (max-width: 799px){
+  .container{
+    height: 750px;
+    width: auto;
+    background-image: url(iphone_wood_kasinoki.jpeg);
+    background-size: cover;
+    position: relative;
+  }
+
+
+  .sentence{
+    margin-top: 80px;
+  }
+
+  .sentence p{
+    font-size: 15px;
+    margin: 10px;
+  }
+  .photos{
+    flex-wrap: wrap;
+  }
+
+  .movies{
+    flex-wrap: wrap;
+  }
+
+  .movie{
+    padding: 30px;
+  }
+}

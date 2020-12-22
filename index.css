@@ -1,0 +1,114 @@
+main{
+  height: 100vh;
+  width: 100vw;
+  background-image: url(top-image.png);
+  background-size: cover;
+}
+
+/* メニューアイコンCSS */
+ul{
+  padding-inline-start: 0;
+}
+
+.menus{
+  padding: 50px 0 0 0;
+  height: 200px;
+  width: 100vw;
+  background-color: lightgray;
+}
+
+.menus-list{
+  height: 150px;
+  width: auto;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  list-style: none;
+}
+
+
+.menu :hover{
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+/* snsコンテンツ */
+
+.sns_contents{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 100vw;
+  background-color: lightgray;
+}
+
+.sns_contents a{
+  margin: 30px;
+}
+
+
+/* footer css */
+footer{
+  width: auto;
+  height: 60px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+footer p{
+  letter-spacing: 1.2px;
+  padding-bottom: 10px;
+}
+
+
+/* Responsive Web Design  iPad */
+@media(min-width: 600px) and (max-width: 1024px){
+  main{
+    background-image: url(ipad-top-image.png);
+    background-size: cover;
+  }
+
+  .menus{
+    justify-content: space-around;
+    height: 120px;
+  }
+
+  .menu-icon{
+    width: 118px;
+    height: 75px;
+  }
+}
+
+/* Responsive Web Design  iPhone */
+@media(min-width: 0px) and (max-width: 599px){
+  main{
+    background-image: url(iphone_top-image.jpeg);
+    background-size: cover;
+  }
+
+  .menus{
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .menus-list{
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu{
+    margin-bottom: 20px;
+  }
+  
+  .menu-icon{
+    width: 180px;
+    height: 115px;
+  }
+
+  .sns-icon{
+    width: 70px;
+    height: 70px;
+  }
+}
