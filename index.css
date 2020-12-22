@@ -88,7 +88,7 @@ footer p{
   }
 
   .menus{
-    height: 100vh;
+    height: 105vh;
     width: 100vw;
   }
 
@@ -103,8 +103,8 @@ footer p{
   }
   
   .menu-icon{
-    width: 180px;
-    height: 115px;
+    width: 160px;
+    height: 95px;
   }
 
   .sns-icon{
