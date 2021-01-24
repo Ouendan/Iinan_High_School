@@ -83,7 +83,7 @@ footer p{
 /* Responsive Web Design  iPhone */
 @media(min-width: 0px) and (max-width: 599px){
   main{
-    background-image: url(iphone_top-image.jpeg);
+    background-image: url(top_iphone.jpg);
     background-size: cover;
   }
 
